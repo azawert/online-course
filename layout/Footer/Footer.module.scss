@@ -1,0 +1,27 @@
+.wrapper {
+  display: grid;
+  background-color: var(--primary);
+  color: var(--white);
+}
+
+@media (max-width: 450px) {
+  .wrapper {
+    grid-template-columns: minmax(320px, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+      "left"
+      "right";
+  }
+  .right_side {
+    grid-area: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .left_side {
+    grid-area: left;
+    align-self: center;
+    justify-self: center;
+  }
+}
