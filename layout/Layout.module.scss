@@ -5,18 +5,18 @@
   grid-template-areas:
     ". header header ."
     ". sidebar main ."
-    "footer footer footer footer";
+    ". footer footer .";
   min-height: 98vh;
 }
 
 .header {
   grid-area: header;
-  display: none;
 }
 
 .main {
   grid-area: main;
 }
+
 .sidebar {
   grid-area: sidebar;
 }
